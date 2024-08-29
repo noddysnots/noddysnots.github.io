@@ -8,8 +8,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
         body {
-            background-color: #1a1a2e;
-            color: #ffffff;
+            background-color: #ffffff;
+            color: #333333;
             font-family: 'Poppins', sans-serif;
             line-height: 1.6;
             margin: 0;
@@ -19,9 +19,9 @@
         header {
             padding: 30px;
             text-align: center;
-            background-color: #0f3460;
-            color: #e94560;
-            border-bottom: 5px solid #16213e;
+            background-color: #0056b3;
+            color: #ffffff;
+            border-bottom: 5px solid #004080;
         }
         header h1 {
             margin: 0;
@@ -36,22 +36,22 @@
             display: flex;
             justify-content: center;
             padding: 20px;
-            background-color: #16213e;
+            background-color: #004080;
         }
         nav a {
-            color: #e94560;
+            color: #ffffff;
             text-decoration: none;
             padding: 10px 20px;
             margin: 0 10px;
-            background-color: #0f3460;
+            background-color: #0056b3;
             border-radius: 5px;
             font-weight: bold;
             transition: transform 0.3s ease;
         }
         nav a:hover {
             transform: scale(1.1);
-            background-color: #e94560;
-            color: #0f3460;
+            background-color: #004080;
+            color: #ffffff;
         }
         .container {
             padding: 40px 20px;
@@ -61,9 +61,9 @@
         }
         h2 {
             font-size: 2.5rem;
-            border-bottom: 2px solid #e94560;
+            border-bottom: 2px solid #0056b3;
             padding-bottom: 10px;
-            color: #e94560;
+            color: #0056b3;
         }
         p, li {
             font-size: 1.2rem;
@@ -71,9 +71,9 @@
         footer {
             text-align: center;
             padding: 30px;
-            background-color: #0f3460;
+            background-color: #0056b3;
+            color: #ffffff;
             margin-top: 40px;
-            color: #e94560;
         }
         img.profile {
             width: 250px;
@@ -81,12 +81,19 @@
             border-radius: 50%;
             display: block;
             margin: 0 auto 20px;
-            border: 5px solid #e94560;
-            box-shadow: 0px 0px 20px rgba(233, 69, 96, 0.5);
+            border: 5px solid #0056b3;
+            box-shadow: 0px 0px 20px rgba(0, 86, 179, 0.5);
             transition: transform 0.3s ease;
         }
         img.profile:hover {
             transform: rotate(360deg);
+        }
+        .section-image {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 86, 179, 0.3);
         }
         @keyframes slide-in {
             0% {transform: translateY(-100px); opacity: 0;}
@@ -126,6 +133,7 @@
 
         <section id="education">
             <h2>Education</h2>
+            <img src="https://via.placeholder.com/800x400?text=Education+Image" alt="Education Image" class="section-image">
             <ul>
                 <li><strong>IIM Lucknow</strong> - PGP in Sustainable Management (2024 - 2026)</li>
                 <li><strong>BTKIT, Dwarahat</strong> - B.Tech in Electronics and Communication Engineering (2014 - 2018)</li>
@@ -136,6 +144,7 @@
 
         <section id="experience">
             <h2>Work Experience</h2>
+            <img src="https://via.placeholder.com/800x400?text=Work+Experience+Image" alt="Work Experience Image" class="section-image">
             <h3>Senior System Engineer, iOPEX Technologies (Jul 2019 - Mar 2023)</h3>
             <ul>
                 <li>SPOC for a major Cybersecurity Firm; led teams in Canada and Poland, generating $5M in revenue.</li>
@@ -178,6 +187,7 @@
 
         <section id="projects">
             <h2>Internship Projects</h2>
+            <img src="https://via.placeholder.com/800x400?text=Projects+Image" alt="Projects Image" class="section-image">
             <h3>Product Manager - Ikana Business Solution (2023/2024)</h3>
             <ul>
                 <li>Orchestrated cross-functional teams to drive product development, improving on-time delivery by 15%.</li>
@@ -192,6 +202,7 @@
 
         <section id="achievements">
             <h2>Academic Achievements</h2>
+            <img src="https://via.placeholder.com/800x400?text=Achievements+Image" alt="Achievements Image" class="section-image">
             <ul>
                 <li>Top 20 in Amazon ACE strategy competition out of 15,000+ teams, and campus winner (2024).</li>
                 <li>Certificate of appreciation for scoring 95 marks in Mathematics in CBSE HSC Board (2014).</li>
@@ -201,6 +212,7 @@
 
         <section id="certifications">
             <h2>Certifications</h2>
+            <img src="https://via.placeholder.com/800x400?text=Certifications+Image" alt="Certifications Image" class="section-image">
             <ul>
                 <li>Introduction to ESG - Certification in ESG fundamentals by the CFI Institute (2024).</li>
                 <li>ELP (Product Management) - Work in PMF, GTM strategy, and wireframes (2024).</li>
@@ -212,6 +224,7 @@
 
         <section id="responsibility">
             <h2>Positions of Responsibility</h2>
+            <img src="https://via.placeholder.com/800x400?text=Responsibility+Image" alt="Responsibility Image" class="section-image">
             <h3>Event Lead, Scintilla (2017)</h3>
             <ul>
                 <li>Orchestrated 10+ events, managing schedules and supporting participation from over 500+ students.</li>
@@ -226,6 +239,7 @@
 
         <section id="extracurricular">
             <h2>Extracurricular Activities</h2>
+            <img src="https://via.placeholder.com/800x400?text=Extracurricular+Image" alt="Extracurricular Image" class="section-image">
             <h3>NGO Volunteer (2021/22)</h3>
             <ul>
                 <li>Ran campaigns on sustainability, education, and healthcare in slum areas of Nainital.</li>
@@ -235,7 +249,7 @@
 
         <section id="contact">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:pantsarthak6@gmail.com" style="color: #e94560;">pantsarthak6@gmail.com</a></p>
+            <p>Email: <a href="mailto:pantsarthak6@gmail.com" style="color: #0056b3;">pantsarthak6@gmail.com</a></p>
         </section>
     </div>
 
