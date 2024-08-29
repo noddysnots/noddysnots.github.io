@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,60 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarthak Pant - Personal Website</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
         body {
-            background-color: #121212;
+            background-color: #1a1a2e;
             color: #ffffff;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Poppins', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
         }
         header {
-            padding: 20px;
+            padding: 30px;
             text-align: center;
-            background-color: #1c1c1c;
+            background-color: #0f3460;
+            color: #e94560;
+            border-bottom: 5px solid #16213e;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 3rem;
+            animation: slide-in 1s ease-out;
+        }
+        header p {
+            font-size: 1.2rem;
+            animation: fade-in 2s ease-out;
         }
         nav {
             display: flex;
             justify-content: center;
-            padding: 10px;
-            background-color: #333;
+            padding: 20px;
+            background-color: #16213e;
         }
         nav a {
-            color: #ffffff;
+            color: #e94560;
             text-decoration: none;
             padding: 10px 20px;
             margin: 0 10px;
-            background-color: #444;
+            background-color: #0f3460;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            font-weight: bold;
+            transition: transform 0.3s ease;
         }
         nav a:hover {
-            background-color: #555;
+            transform: scale(1.1);
+            background-color: #e94560;
+            color: #0f3460;
         }
         .container {
-            padding: 20px;
+            padding: 40px 20px;
         }
         section {
-            margin-bottom: 40px;
+            margin-bottom: 60px;
         }
         h2 {
-            font-size: 2rem;
-            border-bottom: 2px solid #ffffff;
+            font-size: 2.5rem;
+            border-bottom: 2px solid #e94560;
             padding-bottom: 10px;
+            color: #e94560;
         }
         p, li {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #1c1c1c;
+            padding: 30px;
+            background-color: #0f3460;
             margin-top: 40px;
+            color: #e94560;
+        }
+        img.profile {
+            width: 250px;
+            height: auto;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px;
+            border: 5px solid #e94560;
+            box-shadow: 0px 0px 20px rgba(233, 69, 96, 0.5);
+            transition: transform 0.3s ease;
+        }
+        img.profile:hover {
+            transform: rotate(360deg);
+        }
+        @keyframes slide-in {
+            0% {transform: translateY(-100px); opacity: 0;}
+            100% {transform: translateY(0); opacity: 1;}
+        }
+        @keyframes fade-in {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
         }
     </style>
 </head>
@@ -71,39 +108,53 @@
 
     <nav>
         <a href="#about">About Me</a>
-        <a href="#experience">Experience</a>
         <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
+        <a href="#experience">Work Experience</a>
+        <a href="#projects">Internship Projects</a>
+        <a href="#achievements">Academic Achievements</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#responsibility">Positions of Responsibility</a>
+        <a href="#extracurricular">Extracurricular Activities</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
-             <img src="https://raw.githubusercontent.com/noddysnots/noddysnots.github.io/main/1714819711017.jpeg" alt="Sarthak Pant" style="width:200px; height:auto; border-radius:50%;">
-        </section>
-
-        <section id="experience">
-            <h2>Experience</h2>
-            <h3>Senior System Engineer, iOPEX Technologies (Jul 2019 - Mar 2023)</h3>
-            <ul>
-                <li>Led teams in Canada and Poland, generating $5M in revenue and achieving 83% customer retention.</li>
-                <li>Pioneered a pilot program, acquiring 240 new customers in a year.</li>
-                <li>Integrated cloud products using AWS, enhancing efficiency and reducing carbon emissions.</li>
-                <li>Developed and implemented training modules, upskilling over 70 engineers.</li>
-            </ul>
+            <img src="https://raw.githubusercontent.com/noddysnots/noddysnots.github.io/main/1714819711017.jpeg" alt="Sarthak Pant" class="profile">
+            <p>I am Sarthak Pant, currently pursuing a Post Graduate Program in Sustainable Management from IIM Lucknow. I have a strong background in Product Management, Business Development, and Cybersecurity, with over 43 months of experience at iOPEX Technologies. My work has spanned international operations, cloud integration, and leading cross-functional teams across Canada and Poland. I am passionate about driving sustainable business solutions and continuously strive to enhance my skills in this evolving domain.</p>
         </section>
 
         <section id="education">
             <h2>Education</h2>
-            <h3>IIM Lucknow</h3>
-            <p>PGP in Sustainable Management (2024 - 2026)</p>
-            <h3>BTKIT, Dwarahat</h3>
-            <p>B.Tech in Electronics and Communication Engineering (2014 - 2018)</p>
+            <ul>
+                <li><strong>IIM Lucknow</strong> - PGP in Sustainable Management (2024 - 2026)</li>
+                <li><strong>BTKIT, Dwarahat</strong> - B.Tech in Electronics and Communication Engineering (2014 - 2018)</li>
+                <li><strong>AVBIL, Haldwani</strong> - XII-CBSE (2014)</li>
+                <li><strong>AVBIL, Haldwani</strong> - X-CBSE (2012)</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <h3>Senior System Engineer, iOPEX Technologies (Jul 2019 - Mar 2023)</h3>
+            <ul>
+                <li>SPOC for a major Cybersecurity Firm; led teams in Canada and Poland, generating $5M in revenue.</li>
+                <li>Implemented strategies that resulted in over $5M revenue and 83% retention of 200+ customers.</li>
+                <li>Led a pilot program, acquiring 240 new customers in a year.</li>
+                <li>Integrated cloud products using AWS, enhancing efficiency and reducing carbon emissions.</li>
+                <li>Developed and implemented training modules, upskilling over 70 engineers.</li>
+            </ul>
+
+            <h3>Product Manager, Ikana Business Solution (2023/2024)</h3>
+            <ul>
+                <li>Orchestrated cross-functional teams to drive product development, improving on-time delivery by 15%.</li>
+                <li>Implemented Agile frameworks, resulting in a 25% reduction in resolution time.</li>
+            </ul>
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
+            <h2>Internship Projects</h2>
             <h3>Product Manager - Ikana Business Solution (2023/2024)</h3>
             <ul>
                 <li>Orchestrated cross-functional teams to drive product development, improving on-time delivery by 15%.</li>
@@ -116,9 +167,52 @@
             </ul>
         </section>
 
+        <section id="achievements">
+            <h2>Academic Achievements</h2>
+            <ul>
+                <li>Top 20 in Amazon ACE strategy competition out of 15,000+ teams, and campus winner (2024).</li>
+                <li>Certificate of appreciation for scoring 95 marks in Mathematics in CBSE HSC Board (2014).</li>
+                <li>Top 13% rank in JEE Main exam out of 12.9 Lakh students (2014).</li>
+            </ul>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Introduction to ESG - Certification in ESG fundamentals by the CFI Institute (2024).</li>
+                <li>ELP (Product Management) - Work in PMF, GTM strategy, and wireframes (2024).</li>
+                <li>Data Analytics/Data Modelling - Microsoft Power-BI through Udemy (2024).</li>
+                <li>PaloAlto Certified Network Engineer - Certification for PaloAlto Product named NGFW (2020).</li>
+                <li>C++ Programming Language - Certified by Hiltron Calc (2015).</li>
+            </ul>
+        </section>
+
+        <section id="responsibility">
+            <h2>Positions of Responsibility</h2>
+            <h3>Event Lead, Scintilla (2017)</h3>
+            <ul>
+                <li>Orchestrated 10+ events, managing schedules and supporting participation from over 500+ students.</li>
+                <li>Negotiated sponsorships, securing funds from State Bank of India to enhance the event.</li>
+            </ul>
+            <h3>Class Representative, BTKIT (2014)</h3>
+            <ul>
+                <li>Mediated between 10+ faculty and 60+ students on projects, class test/quiz timelines, and academics.</li>
+                <li>Addressed student concerns by informing the Head of Department (HOD) and facilitating resolutions.</li>
+            </ul>
+        </section>
+
+        <section id="extracurricular">
+            <h2>Extracurricular Activities</h2>
+            <h3>NGO Volunteer (2021/22)</h3>
+            <ul>
+                <li>Ran campaigns on sustainability, education, and healthcare in slum areas of Nainital.</li>
+                <li>Collaborated with local stakeholders to tackle societal issues and educate them.</li>
+            </ul>
+        </section>
+
         <section id="contact">
             <h2>Contact</h2>
-            <p>Email: placementspgpsm@iiml.ac.in</p>
+            <p>Email: <a href="mailto:pantsarthak6@gmail.com" style="color: #e94560;">pantsarthak6@gmail.com</a></p>
         </section>
     </div>
 
